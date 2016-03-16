@@ -1,0 +1,44 @@
+{
+	"bold_folder_labels": true,
+	"caret_extra_bottom": 0,
+	"caret_extra_top": 0,
+	"caret_extra_width": 6,
+	"caret_style": "phase",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai-HighFructose (SL).tmTheme",
+	"dpi_scale": 0.7,
+	"fade_fold_buttons": false,
+	"font_face": "SourceCodePro Semibold",
+	"font_options":
+	[
+		"no_round"
+	],
+	"font_size": 12,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"ActionScript",
+		"AppleScript",
+		"ASP",
+		"Batch File",
+		"C#",
+		"C++",
+		"CasperJS",
+		"D",
+		"Haskell",
+		"Java",
+		"LaTeX",
+		"Vintage"
+	],
+	"inverse_caret_state": false,
+	"overlay_scroll_bars": "enabled",
+	"phoenix_color_blue": true,
+	"phoenix_color_expanded_folder": true,
+	"phoenix_solid_current_tab": true,
+	"phoenix_tabs_small": true,
+	"scroll_speed": 10,
+	"tab_size": 2,
+	"theme": "Cola.sublime-theme",
+	"translateTabsToSpaces": true,
+	"translate_tabs_to_spaces": false,
+	"trim_trailing_white_space_on_save": true
+}
