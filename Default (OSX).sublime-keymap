@@ -4,20 +4,16 @@
    { "keys": ["ctrl+shift+b"], "command": "toggle_bookmark" },
    { "keys": ["ctrl+shift+alt+b"], "command": "clear_bookmarks" },
    { "keys": ["ctrl+shift+alt+f2"], "command": "select_all_bookmarks" },
+
    { "keys": ["ctrl+up"], "command": "scroll_lines", "args": {"amount": 10.0 } },
    { "keys": ["ctrl+down"], "command": "scroll_lines", "args": {"amount": -10.0 } },
+
    { "keys": ["ctrl+space"], "command": "code_intel_auto_complete" },
    { "keys": ["super+shift+a"], "command": "alignment" },
-   { "keys": ["ctrl+super+down"], "command": "goto_definition" },
+   { "keys": ["ctrl+super+g"], "command": "goto_definition" },
    { "keys": ["ctrl+alt+["], "command": "quick_themes", "args": {"action": "inc"}},
    { "keys": ["ctrl+alt+]"], "command": "quick_themes", "args": {"action": "dec"}},
    { "keys": ["ctrl+0"], "command": "reset_font_size" },
-   { "keys": ["ctrl+alt+super+up"], "command": "new_pane" },
-   { "keys": ["ctrl+alt+super+down"], "command": "close_pane" },
-   { "keys": ["ctrl+alt+super+left"], "command": "focus_neighboring_group", "args": {"forward": false} },
-   { "keys": ["ctrl+alt+super+right"], "command": "focus_neighboring_group" },
-   { "keys": ["ctrl+alt+super+shift+left"], "command": "move_to_neighboring_group", "args": {"forward": false} },
-   { "keys": ["ctrl+alt+super+shift+right"], "command": "move_to_neighboring_group" },
    { "keys": ["ctrl+shift+c"], "command": "color_pick" },
    { "keys": ["ctrl+alt+b"], "command": "toggle_status_bar" },
    { "keys": ["ctrl+alt+f"], "command": "jsbeautify"},
@@ -30,4 +26,41 @@
    { "keys": ["shift+alt+ctrl+k"], "command": "jasmine_toggle_quotes"},
    { "keys": ["ctrl+k, ctrl+["], "command": "fold" },
    { "keys": ["ctrl+k, ctrl+]"], "command": "unfold" },
-   ]
+
+   { "keys": ["ctrl+d"], "command": "find_under_expand" },
+   { "keys": ["super+f"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
+   // default layout
+   {
+      "keys": ["super+shift+1"],
+      "command": "set_layout",
+      "args":
+      {
+         "cols": [0.0, 1.0],
+         "rows": [0.0, 1.0],
+         "cells": [[0, 0, 1, 1]]
+      }
+   },
+   // two col
+   {
+      "keys": ["super+shift+2"],
+      "command": "set_layout",
+      "args":
+      {
+         "cols": [0.0, 0.5, 1.0],
+         "rows": [0.0, 1.0],
+         "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+      }
+   },
+   {
+      "keys": ["super+shift+3"],
+      "command": "set_layout",
+      "args":
+      {
+         "cols": [0.0, 0.33, 0.66, 1.0],
+         "rows": [0.0, 1.0],
+         "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]]
+      }
+   },
+   { "keys": ["super+shift+up"], "command": "swap_line_up" },
+   { "keys": ["super+shift+down"], "command": "swap_line_down" },
+]
